@@ -1,6 +1,6 @@
 .env
 .idea
-.wttd
+.tahoe
 *.sqlite3
 *.pyc
 __pycache__
