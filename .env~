@@ -1,0 +1,3 @@
+SECRET_KEY='bo=yhxw2)qx&d8ohoemgk*%i*-ihjv3gpfc0b4v#z@st+(!f7!'
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1, .localhost, .herokuapp.com
