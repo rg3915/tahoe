@@ -1,6 +1,6 @@
-from django.contrib.admin import forms
+from django import forms
 from django.contrib.auth.models import User
-
+from servicehunter.core.models import UserProfile
 
 
 class UserForm(forms.ModelForm):
@@ -12,5 +12,5 @@ class UserForm(forms.ModelForm):
 
 class UserProfileForm(forms.ModelForm):
     class Meta:
-        model = UserProfileForm
+        model = UserProfile
         fields = ('website', 'picture')

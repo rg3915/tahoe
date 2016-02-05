@@ -1,8 +1,10 @@
 from django.shortcuts import render, render_to_response
-from servicehunter.core.forms import UserForm, UserProfileForm
+from servicehunter.core.forms import UserProfileForm, UserForm
+
 
 def home(request):
-    return render(request,'index.html')
+    return render(request, 'index.html')
+
 
 def register(request):
     # Like before, get the request's context.
@@ -61,6 +63,6 @@ def register(request):
 
     # Render the template depending on the context.
     return render_to_response(
-            'servicehunter/register.html',
-            {'user_form': user_form, 'profile_form': profile_form, 'registered': registered},
-            context)
+        'register.html',
+        {'user_form': user_form, 'profile_form': profile_form, 'registered': registered},
+        context)
